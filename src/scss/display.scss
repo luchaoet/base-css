@@ -7,7 +7,6 @@
 .g-fixed {
   position: fixed;
 }
-
 .g-block {
   display: block;
 }
@@ -34,6 +33,10 @@
 .g-jc-sa {
   @extend .g-flex;
   justify-content: space-around;
+}
+.g-jc-fe {
+  @extend .g-flex;
+  justify-content: flex-end;
 }
 .g-ai-c {
   @extend .g-flex;
