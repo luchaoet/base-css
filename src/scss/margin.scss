@@ -1,4 +1,4 @@
-@for $i from 2 through 36 {
+@for $i from 0 through 36 {
     .g-m-#{$i} { 
         margin: 1px * $i; 
     }
