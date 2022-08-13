@@ -1,22 +1,21 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');// 抽离css的插件
 
-// development production
 module.exports = {
-  mode: 'production',  //生产模式，会压缩代码，development不会压缩代码
+  mode: 'production',
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist') //打包后的出口
+    path: path.resolve(__dirname, 'dist')
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "index.css",  //打包后的css文件
+      filename: "index.css",
     })
   ],
-//loader链
+  //loader链
   module: {
     rules: [
-      
+
       {
         test: /\.scss$/,
         use: [
@@ -33,12 +32,12 @@ module.exports = {
           }
         ]
       },
-        //如果没有字体图标文件，就不需要这个file-loader
+      //如果没有字体图标文件，就不需要这个file-loader
       {
         test: /\.(woff|woff2?|svg|ttf|eot)$/,
-        use:[
-             {loader:'file-loader',options:{outputPath: 'iconfont'}}//项目设置打包到dist下的fonts文件夹下
-          ]
+        use: [
+          { loader: 'file-loader', options: { outputPath: 'iconfont' } }//项目设置打包到dist下的fonts文件夹下
+        ]
       }
     ]
   }
