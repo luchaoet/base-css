@@ -1,25 +1,31 @@
 @for $i from 0 through 36 {
-    .g-p-#{$i} { 
-        padding: 1px * $i; 
-    }
-    .g-p-t-#{$i} { 
-        padding-top: 1px * $i; 
-    }
-    .g-p-b-#{$i} { 
-        padding-bottom: 1px * $i; 
-    }
-    .g-p-l-#{$i} { 
-        padding-left: 1px * $i; 
-    }
-    .g-p-r-#{$i} { 
-        padding-right: 1px * $i; 
-    }
-	.g-p-tb-#{$i} { 
-		padding-top: 1px * $i; 
-		padding-bottom: 1px * $i; 
+	.g-p-#{$i} {
+		padding: 1px * $i;
 	}
-	.g-p-lr-#{$i} { 
-		padding-left: 1px * $i; 
-		padding-right: 1px * $i; 
+
+	.g-p-t-#{$i} {
+		padding-top: 1px * $i;
+	}
+
+	.g-p-b-#{$i} {
+		padding-bottom: 1px * $i;
+	}
+
+	.g-p-l-#{$i} {
+		padding-left: 1px * $i;
+	}
+
+	.g-p-r-#{$i} {
+		padding-right: 1px * $i;
+	}
+
+	.g-p-tb-#{$i} {
+		padding-top: 1px * $i;
+		padding-bottom: 1px * $i;
+	}
+
+	.g-p-lr-#{$i} {
+		padding-left: 1px * $i;
+		padding-right: 1px * $i;
 	}
 }

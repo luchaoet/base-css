@@ -3,11 +3,17 @@
 		border-radius: 1px * $i;
 	}
 }
+
 @for $i from 0 through 10 {
 	.g-bw-#{$i} {
 		border-width: 1px * $i;
 	}
 }
+
 .g-bs-s {
 	border-style: solid;
+}
+
+.g-bs-d {
+	border-style: dashed;
 }
