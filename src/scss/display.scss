@@ -1,21 +1,18 @@
-.g-relative, .g-p-r {
-  position: relative;
-}
-.g-absolute, .g-p-a {
-  position: absolute;
-}
-.g-fixed, .g-p-f {
-  position: fixed;
-}
-.g-p-s {
-  position: sticky;
-}
-.g-inline, .g-d-i {
+.g-inline,
+.g-d-i {
   display: inline;
 }
-.g-block, .g-d-b {
+
+.g-block,
+.g-d-b {
   display: block;
 }
-.g-inline-block, .g-d-ib {
+
+.g-inline-block,
+.g-d-ib {
   display: inline-block;
+}
+
+.g-d-n {
+  display: none;
 }

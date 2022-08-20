@@ -1,13 +1,19 @@
 .g-bg-fff,
-.g-bc-fff {
+.g-bc-fff,
+.g-bc-w {
   background-color: #fff;
 }
 
 .g-bg-000,
-.g-bc-000 {
+.g-bc-000,
+.g-bc-b {
   background-color: #000;
 }
 
 .g-bc-t {
   background-color: transparent;
+}
+
+.g-br-nr {
+  background-repeat: no-repeat;
 }

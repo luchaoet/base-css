@@ -1,15 +1,24 @@
-.g-o-y-auto, .g-oy-a {
+.g-oy-a {
   overflow-y: auto;
 }
-.g-o-x-auto, .g-ox-a {
-  overflow-x: auto;
-}
-.g-o-y-hidden, .g-oy-h {
+
+.g-oy-h {
   overflow-y: hidden;
 }
-.g-o-x-hidden, .g-ox-h {
+
+.g-ox-a {
+  overflow-x: auto;
+}
+
+.g-ox-h {
   overflow-x: hidden;
 }
-.g-o-hidden, .g-o-h {
+
+
+.g-o-a {
+  overflow: auto;
+}
+
+.g-o-h {
   overflow: hidden;
 }
