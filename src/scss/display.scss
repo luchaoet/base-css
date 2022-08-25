@@ -1,18 +1,23 @@
-.g-inline,
-.g-d-i {
-  display: inline;
-}
+@use 'config.scss' as *;
 
-.g-block,
-.g-d-b {
-  display: block;
-}
+.#{$namespace} {
 
-.g-inline-block,
-.g-d-ib {
-  display: inline-block;
-}
+  &-inline,
+  &-d-i {
+    display: inline;
+  }
 
-.g-d-n {
-  display: none;
+  &-block,
+  &-d-b {
+    display: block;
+  }
+
+  &-inline-block,
+  &-d-ib {
+    display: inline-block;
+  }
+
+  &-d-n {
+    display: none;
+  }
 }

@@ -1,24 +1,29 @@
-.g-oy-a {
-  overflow-y: auto;
-}
+@use 'config.scss' as *;
 
-.g-oy-h {
-  overflow-y: hidden;
-}
+.#{$namespace} {
 
-.g-ox-a {
-  overflow-x: auto;
-}
+  &-oy-a {
+    overflow-y: auto;
+  }
 
-.g-ox-h {
-  overflow-x: hidden;
-}
+  &-oy-h {
+    overflow-y: hidden;
+  }
+
+  &-ox-a {
+    overflow-x: auto;
+  }
+
+  &-ox-h {
+    overflow-x: hidden;
+  }
 
 
-.g-o-a {
-  overflow: auto;
-}
+  &-o-a {
+    overflow: auto;
+  }
 
-.g-o-h {
-  overflow: hidden;
+  &-o-h {
+    overflow: hidden;
+  }
 }

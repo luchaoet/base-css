@@ -1,71 +1,77 @@
-.g-flex,
-.g-d-f {
-  display: flex;
-}
+@use 'config.scss' as *;
 
-.g-inline-flex,
-.g-d-if {
-  display: inline-flex;
-}
+.#{$namespace} {
 
-.g-jc-c {
-  @extend .g-d-f;
-  justify-content: center;
-}
+  &-flex,
+  &-d-f {
+    display: flex;
+  }
 
-.g-jc-sb {
-  @extend .g-d-f;
-  justify-content: space-between;
-}
+  &-inline-flex,
+  &-d-if {
+    display: inline-flex;
+  }
 
-.g-jc-sa {
-  @extend .g-d-f;
-  justify-content: space-around;
-}
+  &-jc-c {
+    @extend .#{$namespace}-d-f;
+    justify-content: center;
+  }
 
-.g-jc-fe {
-  @extend .g-d-f;
-  justify-content: flex-end;
-}
+  &-jc-sb {
+    @extend .#{$namespace}-d-f;
+    justify-content: space-between;
+  }
 
-.g-ai-c {
-  @extend .g-d-f;
-  align-items: center;
-}
+  &-jc-sa {
+    @extend .#{$namespace}-d-f;
+    justify-content: space-around;
+  }
 
-.g-fd-c {
-  @extend .g-d-f;
-  flex-direction: column;
-}
+  &-jc-fe {
+    @extend .#{$namespace}-d-f;
+    justify-content: flex-end;
+  }
 
-.g-jc-sb-ai-c {
-  @extend .g-d-f;
-  justify-content: space-between;
-  align-items: center;
-}
+  &-ai-c {
+    @extend .#{$namespace}-d-f;
+    align-items: center;
+  }
 
-.g-jc-ai-c {
-  @extend .g-d-f;
-  justify-content: center;
-  align-items: center;
-}
+  &-fd-c {
+    @extend .#{$namespace}-d-f;
+    flex-direction: column;
+  }
 
-.g-flex-auto,
-.g-flex-1 {
-  flex: 1 1 auto;
-}
+  &-jc-sb-ai-c {
+    @extend .#{$namespace}-d-f;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.g-flex-none,
-.g-flex-0 {
-  flex: 0 0 auto;
-}
+  &-jc-ai-c {
+    @extend .#{$namespace}-d-f;
+    justify-content: center;
+    align-items: center;
+  }
 
-.g-flex-wrap,
-.g-fw-w {
-  flex-wrap: wrap;
-}
+  &-flex-auto,
+  &-flex-1 {
+    flex: 1 1 auto;
+  }
 
-.g-flex-nowrap,
-.g-fw-n {
-  flex-wrap: nowrap;
+  &-flex-none,
+  &-flex-0 {
+    flex: 0 0 auto;
+  }
+
+  &-flex-wrap,
+  &-fw-w {
+    flex-wrap: wrap;
+  }
+
+  &-flex-nowrap,
+  &-fw-n {
+    flex-wrap: nowrap;
+  }
+
 }

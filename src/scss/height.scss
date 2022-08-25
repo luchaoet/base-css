@@ -1,15 +1,20 @@
-.g-h-0 {
-  height: 0;
-}
+@use 'config.scss' as *;
 
-.g-h-100per {
-  height: 100%;
-}
+.#{$namespace} {
 
-.g-h-100vh {
-  height: 100vh;
-}
+  &-h-0 {
+    height: 0;
+  }
 
-.g-mh-100vh {
-  min-height: 100vh;
+  &-h-100per {
+    height: 100%;
+  }
+
+  &-h-100vh {
+    height: 100vh;
+  }
+
+  &-mh-100vh {
+    min-height: 100vh;
+  }
 }

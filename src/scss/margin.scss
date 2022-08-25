@@ -1,25 +1,36 @@
+@use 'config.scss' as *;
+
 @for $i from 0 through 36 {
-    .g-m-#{$i} { 
-        margin: 1px * $i; 
-    }
-    .g-m-t-#{$i} { 
-        margin-top: 1px * $i; 
-    }
-    .g-m-b-#{$i} { 
-        margin-bottom: 1px * $i; 
-    }
-    .g-m-l-#{$i} { 
-        margin-left: 1px * $i; 
-    }
-    .g-m-r-#{$i} { 
-        margin-right: 1px * $i; 
-    }
-	.g-m-tb-#{$i} { 
-		margin-top: 1px * $i; 
-		margin-bottom: 1px * $i; 
+	.#{$namespace} {
+		&-m-#{$i} {
+			margin: 1px * $i;
+		}
+
+		&-m-t-#{$i} {
+			margin-top: 1px * $i;
+		}
+
+		&-m-b-#{$i} {
+			margin-bottom: 1px * $i;
+		}
+
+		&-m-l-#{$i} {
+			margin-left: 1px * $i;
+		}
+
+		&-m-r-#{$i} {
+			margin-right: 1px * $i;
+		}
+
+		&-m-tb-#{$i} {
+			margin-top: 1px * $i;
+			margin-bottom: 1px * $i;
+		}
+
+		&-m-lr-#{$i} {
+			margin-left: 1px * $i;
+			margin-right: 1px * $i;
+		}
 	}
-	.g-m-lr-#{$i} { 
-		margin-left: 1px * $i; 
-		margin-right: 1px * $i; 
-	}
+
 }

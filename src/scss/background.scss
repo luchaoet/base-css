@@ -1,19 +1,25 @@
-.g-bg-fff,
-.g-bc-fff,
-.g-bc-w {
-  background-color: #fff;
-}
+@use 'config.scss' as *;
 
-.g-bg-000,
-.g-bc-000,
-.g-bc-b {
-  background-color: #000;
-}
+.#{$namespace} {
 
-.g-bc-t {
-  background-color: transparent;
-}
+  &-bg-fff,
+  &-bc-fff,
+  &-bc-w {
+    background-color: #fff;
+  }
 
-.g-br-nr {
-  background-repeat: no-repeat;
+  &-bg-000,
+  &-bc-000,
+  &-bc-b {
+    background-color: #000;
+  }
+
+
+  &-bc-t {
+    background-color: transparent;
+  }
+
+  &-br-nr {
+    background-repeat: no-repeat;
+  }
 }

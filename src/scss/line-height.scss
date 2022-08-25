@@ -1,3 +1,7 @@
-.g-lh-1 {
-  line-height: 1;
+@use 'config.scss' as *;
+
+.#{$namespace} {
+  &-lh-1 {
+    line-height: 1;
+  }
 }

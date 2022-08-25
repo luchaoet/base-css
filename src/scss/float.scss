@@ -1,6 +1,12 @@
-.g-f-r {
-  float: right;
-}
-.g-f-l {
-  float: left;
+@use 'config.scss' as *;
+
+.#{$namespace} {
+
+  &-f-r {
+    float: right;
+  }
+
+  &-f-l {
+    float: left;
+  }
 }

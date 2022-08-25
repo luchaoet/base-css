@@ -1,6 +1,12 @@
-.g-d-g {
-  display: grid;
-}
-.g-d-ig {
-  display: inline-grid;
+@use 'config.scss' as *;
+
+.#{$namespace} {
+
+  &-d-g {
+    display: grid;
+  }
+
+  &-d-ig {
+    display: inline-grid;
+  }
 }

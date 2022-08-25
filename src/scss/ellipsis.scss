@@ -1,17 +1,20 @@
-.g-ellipsis-1,
-.ellipsis-1,
-.g-e-1 {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
+@use 'config.scss' as *;
 
-.g-ellipsis-2,
-.ellipsis-2,
-.g-e-2 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+.#{$namespace} {
+
+  &-ellipsis-1,
+  &-e-1 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &-ellipsis-2,
+  &-e-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
 }

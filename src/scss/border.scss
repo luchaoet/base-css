@@ -1,23 +1,31 @@
+@use 'config.scss' as *;
+
 @for $i from 0 through 10 {
-	.g-br-#{$i} {
-		border-radius: 1px * $i;
+	.#{$namespace} {
+		&-br-#{$i} {
+			border-radius: 1px * $i;
+		}
 	}
 }
 
 @for $i from 0 through 10 {
-	.g-bw-#{$i} {
-		border-width: 1px * $i;
+	.#{$namespace} {
+		&-bw-#{$i} {
+			border-width: 1px * $i;
+		}
 	}
 }
 
-.g-bs-s {
-	border-style: solid;
-}
+.#{$namespace} {
+	&-bs-s {
+		border-style: solid;
+	}
 
-.g-bs-d {
-	border-style: dashed;
-}
+	&-bs-d {
+		border-style: dashed;
+	}
 
-.g-b-n {
-	border: none;
+	&-b-n {
+		border: none;
+	}
 }

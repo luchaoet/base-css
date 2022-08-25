@@ -1,11 +1,16 @@
-.g-ta-l {
-  text-align: left;
-}
+@use 'config.scss' as *;
 
-.g-ta-c {
-  text-align: center;
-}
+.#{$namespace} {
+  &-ta-l {
+    text-align: left;
+  }
 
-.g-ta-r {
-  text-align: right;
+  &-ta-c {
+    text-align: center;
+  }
+
+  &-ta-r {
+    text-align: right;
+  }
+
 }

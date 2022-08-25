@@ -1,7 +1,11 @@
-.g-td-n {
-  text-decoration: none;
-}
+@use 'config.scss' as *;
 
-.g-td-u {
-  text-decoration: underline;
+.#{$namespace} {
+  &-td-n {
+    text-decoration: none;
+  }
+
+  &-td-u {
+    text-decoration: underline;
+  }
 }

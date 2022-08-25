@@ -1,34 +1,39 @@
-.g-relative,
-.g-p-r {
-  position: relative;
-}
+@use 'config.scss' as *;
 
-.g-absolute,
-.g-p-a {
-  position: absolute;
-}
+.#{$namespace} {
 
-.g-fixed,
-.g-p-f {
-  position: fixed;
-}
+  &-relative,
+  &-p-r {
+    position: relative;
+  }
 
-.g-p-s {
-  position: sticky;
-}
+  &-absolute,
+  &-p-a {
+    position: absolute;
+  }
 
-.g-t-0 {
-  top: 0;
-}
+  &-fixed,
+  &-p-f {
+    position: fixed;
+  }
 
-.g-b-0 {
-  bottom: 0;
-}
+  &-p-s {
+    position: sticky;
+  }
 
-.g-l-0 {
-  left: 0;
-}
+  &-t-0 {
+    top: 0;
+  }
 
-.g-r-0 {
-  right: 0;
+  &-b-0 {
+    bottom: 0;
+  }
+
+  &-l-0 {
+    left: 0;
+  }
+
+  &-r-0 {
+    right: 0;
+  }
 }

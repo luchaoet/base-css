@@ -1,28 +1,33 @@
-.g-c-pointer,
-.g-c-p {
-  cursor: pointer;
-}
+@use 'config.scss' as *;
 
-.g-c-na {
-  cursor: not-allowed;
-}
+.#{$namespace} {
 
-.g-c-m {
-  cursor: move;
-}
+  &-c-pointer,
+  &-c-p {
+    cursor: pointer;
+  }
 
-.g-c-zo {
-  cursor: zoom-out;
-}
+  &-c-na {
+    cursor: not-allowed;
+  }
 
-.g-c-zi {
-  cursor: zoom-in;
-}
+  &-c-m {
+    cursor: move;
+  }
 
-.g-pe-n {
-  pointer-events: none;
-}
+  &-c-zo {
+    cursor: zoom-out;
+  }
 
-.g-pe-a {
-  pointer-events: auto;
+  &-c-zi {
+    cursor: zoom-in;
+  }
+
+  &-pe-n {
+    pointer-events: none;
+  }
+
+  &-pe-a {
+    pointer-events: auto;
+  }
 }

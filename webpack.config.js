@@ -12,7 +12,7 @@ module.exports = {
       filename: "index.css",
     })
   ],
-  //loader链
+
   module: {
     rules: [
 
@@ -24,19 +24,18 @@ module.exports = {
             loader: 'css-loader'
           },
           {
-            loader: "resolve-url-loader"  //因为scss-loader没有重写url的功能，所以必须安装这个
+            loader: "resolve-url-loader"
           },
           {
-            loader: "sass-loader", // 将 Sass 编译成 CSS
-            options: { sourceMap: true }  //必须要写
+            loader: "sass-loader",
+            options: { sourceMap: true }
           }
         ]
       },
-      //如果没有字体图标文件，就不需要这个file-loader
       {
         test: /\.(woff|woff2?|svg|ttf|eot)$/,
         use: [
-          { loader: 'file-loader', options: { outputPath: 'iconfont' } }//项目设置打包到dist下的fonts文件夹下
+          { loader: 'file-loader', options: { outputPath: 'iconfont' } }
         ]
       }
     ]

@@ -1,5 +1,10 @@
+@use 'config.scss' as *;
+
 @for $i from 12 through 36 {
-	.g-fs-#{$i} {
-		font-size: 1px * $i;
+
+	.#{$namespace} {
+		&-fs-#{$i} {
+			font-size: 1px * $i;
+		}
 	}
 }

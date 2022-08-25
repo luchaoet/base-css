@@ -1,6 +1,12 @@
-.g-bs-bb {
-  box-sizing: border-box;
-}
-.g-bs-cb {
-  box-sizing: content-box;
+@use 'config.scss' as *;
+
+.#{$namespace} {
+
+  &-bs-bb {
+    box-sizing: border-box;
+  }
+
+  &-bs-cb {
+    box-sizing: content-box;
+  }
 }

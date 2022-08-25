@@ -1,11 +1,16 @@
-.g-fw-l {
-	font-weight: lighter;
-}
+@use 'config.scss' as *;
 
-.g-fw-n {
-	font-weight: normal;
-}
+.#{$namespace} {
 
-.g-fw-b {
-	font-weight: bold;
+	&-fw-l {
+		font-weight: lighter;
+	}
+
+	&-fw-n {
+		font-weight: normal;
+	}
+
+	&-fw-b {
+		font-weight: bold;
+	}
 }

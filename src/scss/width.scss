@@ -1,9 +1,16 @@
-.g-w-0 {
-  width: 0;
-}
-.g-w-100per {
-  width: 100%;
-}
-.g-w-100vw {
-  width: 100vw;
+@use 'config.scss' as *;
+
+.#{$namespace} {
+  &-w-0 {
+    width: 0;
+  }
+
+  &-w-100per {
+    width: 100%;
+  }
+
+  &-w-100vw {
+    width: 100vw;
+  }
+
 }
