@@ -1,18 +1,14 @@
 @use 'config.scss' as *;
 
 .#{$namespace} {
-
-  &-inline,
   &-d-i {
     display: inline;
   }
 
-  &-block,
   &-d-b {
     display: block;
   }
 
-  &-inline-block,
   &-d-ib {
     display: inline-block;
   }

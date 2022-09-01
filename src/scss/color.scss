@@ -1,0 +1,14 @@
+@use 'config.scss' as *;
+
+.#{$namespace} {
+
+  &-c-fff,
+  &-c-w {
+    color: #fff;
+  }
+
+  &-c-fff,
+  &-c-b {
+    color: #000;
+  }
+}
