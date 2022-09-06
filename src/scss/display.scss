@@ -1,19 +1,16 @@
 @use 'config.scss' as *;
 
+$display: (
+  'i': inline,
+  'b': block,
+  'ib': inline-block,
+  'n': none
+);
+
 .#{$namespace} {
-  &-d-i {
-    display: inline;
-  }
-
-  &-d-b {
-    display: block;
-  }
-
-  &-d-ib {
-    display: inline-block;
-  }
-
-  &-d-n {
-    display: none;
+  @each $d in map-keys($display) {
+    &-d-#{$d} {
+      display: map-get($display, $d);
+    }
   }
 }

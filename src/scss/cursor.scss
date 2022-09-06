@@ -1,26 +1,18 @@
 @use 'config.scss' as *;
 
+$cursor: (
+  'p': pointer,
+  'na': not-allowed,
+  'm': move,
+  'zo': zoom-out,
+  'zi': zoom-in
+);
+
 .#{$namespace} {
-
-  &-c-pointer,
-  &-c-p {
-    cursor: pointer;
-  }
-
-  &-c-na {
-    cursor: not-allowed;
-  }
-
-  &-c-m {
-    cursor: move;
-  }
-
-  &-c-zo {
-    cursor: zoom-out;
-  }
-
-  &-c-zi {
-    cursor: zoom-in;
+  @each $c in map-keys($cursor) {
+    &-c-#{$c} {
+      cursor: map-get($cursor, $c);
+    }
   }
 
   &-pe-n {

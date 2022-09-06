@@ -1,16 +1,16 @@
 @use 'config.scss' as *;
 
+$width: (
+  '0': 0,
+  '100per': 100%,
+  '100vw': 100vw,
+);
+
 .#{$namespace} {
-  &-w-0 {
-    width: 0;
-  }
 
-  &-w-100per {
-    width: 100%;
+  @each $w in map-keys($width) {
+    &-w-#{$w} {
+      width: map-get($width, $w);
+    }
   }
-
-  &-w-100vw {
-    width: 100vw;
-  }
-
 }

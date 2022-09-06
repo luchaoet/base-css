@@ -1,16 +1,13 @@
 @use 'config.scss' as *;
 
+$align: left, center, right;
+
 .#{$namespace} {
-  &-ta-l {
-    text-align: left;
-  }
+  @each $a in $align {
+    $n: str-slice($a, 1, 1);
 
-  &-ta-c {
-    text-align: center;
+    &-ta-#{$n} {
+      text-align: $a;
+    }
   }
-
-  &-ta-r {
-    text-align: right;
-  }
-
 }

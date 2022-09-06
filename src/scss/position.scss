@@ -1,24 +1,14 @@
 @use 'config.scss' as *;
 
+$positions: relative, absolute, fixed, sticky;
+
 .#{$namespace} {
+  @each $p in $positions {
+    $n: str-slice($p, 1, 1);
 
-  &-relative,
-  &-p-r {
-    position: relative;
-  }
-
-  &-absolute,
-  &-p-a {
-    position: absolute;
-  }
-
-  &-fixed,
-  &-p-f {
-    position: fixed;
-  }
-
-  &-p-s {
-    position: sticky;
+    &-p-#{$n} {
+      position: $p;
+    }
   }
 
   @each $p in $position {

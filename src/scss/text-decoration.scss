@@ -1,11 +1,13 @@
 @use 'config.scss' as *;
 
-.#{$namespace} {
-  &-td-n {
-    text-decoration: none;
-  }
+$decoration: none, underline;
 
-  &-td-u {
-    text-decoration: underline;
+.#{$namespace} {
+  @each $d in $decoration {
+    $n: str-slice($d, 1, 1);
+
+    &-td-#{$n} {
+      text-decoration: $d;
+    }
   }
 }

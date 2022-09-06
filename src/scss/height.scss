@@ -1,17 +1,17 @@
 @use 'config.scss' as *;
 
+$height: (
+  '0': 0,
+  '100per': 100%,
+  '100vh': 100vh,
+);
+
 .#{$namespace} {
 
-  &-h-0 {
-    height: 0;
-  }
-
-  &-h-100per {
-    height: 100%;
-  }
-
-  &-h-100vh {
-    height: 100vh;
+  @each $h in map-keys($height) {
+    &-h-#{$h} {
+      height: map-get($height, $h);
+    }
   }
 
   &-mh-100vh {
