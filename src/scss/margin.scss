@@ -1,7 +1,7 @@
 @use 'config.scss' as *;
 
-@for $i from 0 through 36 {
-	.#{$namespace} {
+.#{$namespace} {
+	@for $i from 0 through 36 {
 		&-m-#{$i} {
 			margin: 1px * $i;
 		}
@@ -25,4 +25,8 @@
 		}
 	}
 
+	&-m-lr-a {
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
