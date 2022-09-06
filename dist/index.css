@@ -112,7 +112,7 @@ img {
 .g-flex, .g-d-f, .g-jc-ai-c, .g-jc-fe-ai-c, .g-jc-sb-ai-c, .g-fd-c, .g-ai-c, .g-jc-fe, .g-jc-sa, .g-jc-sb, .g-jc-c {
   display: flex;
 }
-.g-inline-flex, .g-d-if {
+.g-d-if {
   display: inline-flex;
 }
 .g-jc-c {
@@ -202,10 +202,10 @@ img {
   width: 100vw;
 }
 
-.g-c-fff, .g-c-w {
+.g-c-w {
   color: #fff;
 }
-.g-c-fff, .g-c-b {
+.g-c-b {
   color: #000;
 }
 
@@ -2463,7 +2463,7 @@ img {
   text-align: right;
 }
 
-.g-bc-fff, .g-bc-w {
+.g-bc-w {
   background-color: #fff;
 }
 .g-bc-b {
