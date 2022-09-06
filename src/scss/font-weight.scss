@@ -1,16 +1,14 @@
 @use 'config.scss' as *;
 
+$weight: lighter, normal, bold;
+
 .#{$namespace} {
 
-	&-fw-l {
-		font-weight: lighter;
-	}
+	@each $w in $weight {
+		$n: str-slice($w, 1, 1);
 
-	&-fw-n {
-		font-weight: normal;
-	}
-
-	&-fw-b {
-		font-weight: bold;
+		&-fw-#{$n} {
+			font-weight: $w;
+		}
 	}
 }

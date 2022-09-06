@@ -1,47 +1,12 @@
 @use 'config.scss' as *;
 
+$zIndex: -1, 1, 2, 9, 10, 99, 100, 999, 1000, 9999, 10000;
+
 .#{$namespace} {
-  &-zi--1 {
-    z-index: -1;
-  }
+  @each $z in $zIndex {
 
-  &-zi-1 {
-    z-index: 1;
-  }
-
-  &-zi-2 {
-    z-index: 2;
-  }
-
-  &-zi-9 {
-    z-index: 9;
-  }
-
-  &-zi-10 {
-    z-index: 10;
-  }
-
-  &-zi-99 {
-    z-index: 99;
-  }
-
-  &-zi-100 {
-    z-index: 100;
-  }
-
-  &-zi-999 {
-    z-index: 999;
-  }
-
-  &-zi-1000 {
-    z-index: 1000;
-  }
-
-  &-zi-9999 {
-    z-index: 9999;
-  }
-
-  &-zi-10000 {
-    z-index: 10000;
+    &-zi-#{$z} {
+      z-index: $z;
+    }
   }
 }

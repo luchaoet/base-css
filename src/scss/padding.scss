@@ -7,20 +7,12 @@
 			padding: 1px * $i;
 		}
 
-		&-p-t-#{$i} {
-			padding-top: 1px * $i;
-		}
+		@each $p in $position {
+			$n: str-slice($p, 1, 1);
 
-		&-p-b-#{$i} {
-			padding-bottom: 1px * $i;
-		}
-
-		&-p-l-#{$i} {
-			padding-left: 1px * $i;
-		}
-
-		&-p-r-#{$i} {
-			padding-right: 1px * $i;
+			&-p-#{$n}-#{$i} {
+				padding-#{$p}: 1px * $i;
+			}
 		}
 
 		&-p-tb-#{$i} {

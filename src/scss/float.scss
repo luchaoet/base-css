@@ -1,12 +1,14 @@
 @use 'config.scss' as *;
 
+$float: right, left;
+
 .#{$namespace} {
 
-  &-f-r {
-    float: right;
-  }
+  @each $f in $float {
+    $n: str-slice($f, 1, 1);
 
-  &-f-l {
-    float: left;
+    &-f-#{$n} {
+      float: $f;
+    }
   }
 }

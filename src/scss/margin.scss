@@ -6,20 +6,12 @@
 			margin: 1px * $i;
 		}
 
-		&-m-t-#{$i} {
-			margin-top: 1px * $i;
-		}
+		@each $p in $position {
+			$n: str-slice($p, 1, 1);
 
-		&-m-b-#{$i} {
-			margin-bottom: 1px * $i;
-		}
-
-		&-m-l-#{$i} {
-			margin-left: 1px * $i;
-		}
-
-		&-m-r-#{$i} {
-			margin-right: 1px * $i;
+			&-m-#{$n}-#{$i} {
+				margin-#{$p}: 1px * $i;
+			}
 		}
 
 		&-m-tb-#{$i} {
