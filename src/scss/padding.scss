@@ -2,27 +2,30 @@
 
 
 @for $i from 0 through 36 {
-	.#{$namespace} {
-		&-p-#{$i} {
-			padding: 1px * $i;
-		}
-
-		@each $p in $position {
-			$n: str-slice($p, 1, 1);
-
-			&-p-#{$n}-#{$i} {
-				padding-#{$p}: 1px * $i;
+	@if $i % 2==0 {
+		.#{$namespace} {
+			&-p-#{$i} {
+				padding: 1px * $i;
 			}
-		}
 
-		&-p-tb-#{$i} {
-			padding-top: 1px * $i;
-			padding-bottom: 1px * $i;
-		}
+			@each $p in $position {
+				$n: str-slice($p, 1, 1);
 
-		&-p-lr-#{$i} {
-			padding-left: 1px * $i;
-			padding-right: 1px * $i;
+				&-p-#{$n}-#{$i} {
+					padding-#{$p}: 1px * $i;
+				}
+			}
+
+			&-p-tb-#{$i} {
+				padding-top: 1px * $i;
+				padding-bottom: 1px * $i;
+			}
+
+			&-p-lr-#{$i} {
+				padding-left: 1px * $i;
+				padding-right: 1px * $i;
+			}
+
 		}
 
 	}

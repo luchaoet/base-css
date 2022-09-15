@@ -9,4 +9,18 @@
   &-d-ig {
     display: inline-grid;
   }
+
+  @for $i from 4 through 36 {
+    @if $i % 2==0 {
+      &-grg-#{$i} {
+        grid-row-gap: 1px * $i;
+      }
+
+      &-gcg-#{$i} {
+        grid-column-gap: 1px * $i;
+      }
+
+    }
+  }
+
 }

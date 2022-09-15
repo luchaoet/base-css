@@ -1,0 +1,16 @@
+@use 'config.scss' as *;
+
+.#{$namespace} {
+  &-pe-n {
+    pointer-events: none;
+  }
+
+  &-pe-a {
+    pointer-events: auto;
+  }
+
+  &-us-n {
+    user-select: none;
+  }
+
+}

@@ -14,9 +14,6 @@ $positions: relative, absolute, fixed, sticky;
   @each $p in $position {
     $n: str-slice($p, 1, 1);
 
-    // .g-t-0 {
-    //   top: 0;
-    // }
     &-#{$n}-0 {
       #{$p}: 0;
     }

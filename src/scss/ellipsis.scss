@@ -2,14 +2,12 @@
 
 .#{$namespace} {
 
-  &-ellipsis-1,
   &-e-1 {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
 
-  &-ellipsis-2,
   &-e-2 {
     overflow: hidden;
     text-overflow: ellipsis;

@@ -14,17 +14,4 @@ $cursor: (
       cursor: map-get($cursor, $c);
     }
   }
-
-  &-pe-n {
-    pointer-events: none;
-  }
-
-  &-pe-a {
-    pointer-events: auto;
-  }
-
-  &-us-n {
-    user-select: none;
-  }
-
 }

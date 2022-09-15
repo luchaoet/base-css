@@ -12,9 +12,12 @@ $height: (
     &-h-#{$h} {
       height: map-get($height, $h);
     }
+
+    @if $h  !='0' {
+      &-mh-#{$h} {
+        min-height: map-get($height, $h);
+      }
+    }
   }
 
-  &-mh-100vh {
-    min-height: 100vh;
-  }
 }
