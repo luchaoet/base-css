@@ -22,4 +22,9 @@ $cursor: (
   &-pe-a {
     pointer-events: auto;
   }
+
+  &-us-n {
+    user-select: none;
+  }
+
 }

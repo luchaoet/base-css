@@ -243,6 +243,9 @@ img {
 .g-pe-a {
   pointer-events: auto;
 }
+.g-us-n {
+  user-select: none;
+}
 
 .g-m-0 {
   margin: 0px;
