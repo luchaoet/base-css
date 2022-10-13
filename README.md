@@ -4,7 +4,7 @@
 ### 版本及修改内容
 版本  | 修改内容|
 --------- | --------|
-3.0.0  | :flushed: 去掉 `font-size` `margin` `padding` `border-width` 奇数px |
+3.0.0  | :flushed: 删除 `font-size` `margin` `padding` `border-width` 奇数px |
 3.0.1  | :sunglasses: 新增 `visibility` `transition` `opacity` `position: static` `height: auto` `width: auto` |
 ### 依赖
 
