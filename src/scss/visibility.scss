@@ -1,0 +1,13 @@
+@use 'config.scss' as *;
+
+$attributes: visible, hidden;
+
+.#{$namespace} {
+  @each $a in $attributes {
+    $n: str-slice($a, 1, 1);
+
+    &-v-#{$n} {
+      visibility: $a;
+    }
+  }
+}

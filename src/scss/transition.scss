@@ -1,0 +1,25 @@
+@use 'config.scss' as *;
+
+.#{$namespace} {
+  &-t-i {
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+  }
+
+  &-ttf-e {
+    transition-timing-function: ease;
+  }
+
+  &-ttf-ei {
+    transition-timing-function: ease-in;
+  }
+
+  &-ttf-eo {
+    transition-timing-function: ease-out;
+  }
+
+  &-ttf-eio {
+    transition-timing-function: ease-in-out;
+  }
+}

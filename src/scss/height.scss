@@ -1,22 +1,24 @@
 @use 'config.scss' as *;
 
 $height: (
+  'a': auto,
   '0': 0,
   '100per': 100%,
   '100vh': 100vh,
 );
 
 .#{$namespace} {
+  &-mh-100per {
+    min-height: 100%;
+  }
+
+  &-mh-100vh {
+    min-height: 100vh;
+  }
 
   @each $h in map-keys($height) {
     &-h-#{$h} {
       height: map-get($height, $h);
-    }
-
-    @if $h  !='0' {
-      &-mh-#{$h} {
-        min-height: map-get($height, $h);
-      }
     }
   }
 

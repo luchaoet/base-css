@@ -1,6 +1,7 @@
 @use 'config.scss' as *;
 
 $width: (
+  'auto': auto,
   '0': 0,
   '50per': 50%,
   '100per': 100%,
@@ -8,6 +9,9 @@ $width: (
 );
 
 .#{$namespace} {
+  &-mw-1200 {
+    max-width: 1200px;
+  }
 
   @each $w in map-keys($width) {
     &-w-#{$w} {

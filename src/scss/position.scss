@@ -1,13 +1,13 @@
 @use 'config.scss' as *;
 
-$positions: relative, absolute, fixed, sticky;
+$attributes: static, relative, absolute, fixed, sticky;
 
 .#{$namespace} {
-  @each $p in $positions {
-    $n: str-slice($p, 1, 1);
+  @each $a in $attributes {
+    $n: str-slice($a, 1, 1);
 
     &-p-#{$n} {
-      position: $p;
+      position: $a;
     }
   }
 

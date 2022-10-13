@@ -297,6 +297,12 @@ img {
   float: left;
 }
 
+.g-mw-1200 {
+  max-width: 1200px;
+}
+.g-w-auto {
+  width: auto;
+}
 .g-w-0 {
   width: 0;
 }
@@ -317,20 +323,23 @@ img {
   color: #000;
 }
 
+.g-mh-100per {
+  min-height: 100%;
+}
+.g-mh-100vh {
+  min-height: 100vh;
+}
+.g-h-a {
+  height: auto;
+}
 .g-h-0 {
   height: 0;
 }
 .g-h-100per {
   height: 100%;
 }
-.g-mh-100per {
-  min-height: 100%;
-}
 .g-h-100vh {
   height: 100vh;
-}
-.g-mh-100vh {
-  min-height: 100vh;
 }
 
 .g-c-p {
@@ -977,6 +986,13 @@ img {
   border-left-style: dashed;
 }
 
+.g-o-0 {
+  opacity: 0;
+}
+.g-o-1 {
+  opacity: 1;
+}
+
 .g-d-i {
   display: inline;
 }
@@ -1480,6 +1496,66 @@ img {
   padding-right: 36px;
 }
 
+.g-oy-a {
+  overflow-y: auto;
+}
+.g-oy-h {
+  overflow-y: hidden;
+}
+.g-ox-a {
+  overflow-x: auto;
+}
+.g-ox-h {
+  overflow-x: hidden;
+}
+.g-o-a {
+  overflow: auto;
+}
+.g-o-h {
+  overflow: hidden;
+}
+
+.g-e-1 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.g-e-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.g-p-s {
+  position: static;
+}
+.g-p-r {
+  position: relative;
+}
+.g-p-a {
+  position: absolute;
+}
+.g-p-f {
+  position: fixed;
+}
+.g-p-s {
+  position: sticky;
+}
+.g-t-0 {
+  top: 0;
+}
+.g-r-0 {
+  right: 0;
+}
+.g-b-0 {
+  bottom: 0;
+}
+.g-l-0 {
+  left: 0;
+}
+
 .g-fs-12 {
   font-size: 12px;
 }
@@ -1532,61 +1608,29 @@ img {
   font-size: 36px;
 }
 
-.g-oy-a {
-  overflow-y: auto;
+.g-t-i {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
 }
-.g-oy-h {
-  overflow-y: hidden;
+.g-ttf-e {
+  transition-timing-function: ease;
 }
-.g-ox-a {
-  overflow-x: auto;
+.g-ttf-ei {
+  transition-timing-function: ease-in;
 }
-.g-ox-h {
-  overflow-x: hidden;
+.g-ttf-eo {
+  transition-timing-function: ease-out;
 }
-.g-o-a {
-  overflow: auto;
-}
-.g-o-h {
-  overflow: hidden;
-}
-
-.g-e-1 {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.g-e-2 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+.g-ttf-eio {
+  transition-timing-function: ease-in-out;
 }
 
-.g-p-r {
-  position: relative;
+.g-v-v {
+  visibility: visible;
 }
-.g-p-a {
-  position: absolute;
-}
-.g-p-f {
-  position: fixed;
-}
-.g-p-s {
-  position: sticky;
-}
-.g-t-0 {
-  top: 0;
-}
-.g-r-0 {
-  right: 0;
-}
-.g-b-0 {
-  bottom: 0;
-}
-.g-l-0 {
-  left: 0;
+.g-v-h {
+  visibility: hidden;
 }
 
 .g-bs-bb {

@@ -1,0 +1,13 @@
+@use 'config.scss' as *;
+
+$values: 0, 1;
+
+.#{$namespace} {
+
+  @each $v in $values {
+    &-o-#{$v} {
+      opacity: $v;
+    }
+  }
+
+}
