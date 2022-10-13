@@ -1,11 +1,11 @@
 # @luchao/base-sass
 前端项目基础css样式
 
-### 版本对应修改记录
+### 版本及修改内容
 版本  | 修改内容|
 --------- | --------|
-3.0.0  | font-size / margin / padding / border-width去掉奇数px; |
-3.0.1  | 新增 visibility; transition; opacity; position: static; height: auto; width: auto; |
+3.0.0  | `font-size` `margin` `padding` `border-width` 去掉奇数px |
+3.0.1  | 新增 `visibility` `transition` `opacity` `position: static` `height: auto` `width: auto` |
 ### 依赖
 
 ```
