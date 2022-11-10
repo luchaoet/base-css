@@ -6,6 +6,7 @@
 --------- | --------|
 3.0.0  | :flushed: 删除 `font-size` `margin` `padding` `border-width` 奇数px |
 3.0.1  | :sunglasses: 新增 `visibility` `transition` `opacity` `position: static` `height: auto` `width: auto` |
+3.0.3  | :sunglasses: 新增 `line-height` 修改 `border-radius` `padding` `margin` 最大值为40px
 ### 依赖
 
 ```
