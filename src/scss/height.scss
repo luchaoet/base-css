@@ -8,6 +8,12 @@ $height: (
 );
 
 .#{$namespace} {
+  @each $h in map-keys($height) {
+    &-h-#{$h} {
+      height: map-get($height, $h);
+    }
+  }
+
   &-mh-100per {
     min-height: 100%;
   }
@@ -15,11 +21,4 @@ $height: (
   &-mh-100vh {
     min-height: 100vh;
   }
-
-  @each $h in map-keys($height) {
-    &-h-#{$h} {
-      height: map-get($height, $h);
-    }
-  }
-
 }

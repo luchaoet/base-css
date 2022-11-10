@@ -10,7 +10,7 @@
     display: inline-grid;
   }
 
-  @for $i from 4 through 36 {
+  @for $i from 2 through 40 {
     @if $i % 2==0 {
       &-grg-#{$i} {
         grid-row-gap: 1px * $i;

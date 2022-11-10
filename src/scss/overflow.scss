@@ -1,29 +1,23 @@
 @use 'config.scss' as *;
 
+
+$overflow: (
+  'a': auto,
+  'h': hidden,
+);
+
 .#{$namespace} {
+  @each $o in map-keys($overflow) {
+    &-ox-#{$o} {
+      overflow-x: map-get($overflow, $o);
+    }
 
-  &-oy-a {
-    overflow-y: auto;
-  }
+    &-oy-#{$o} {
+      overflow-y: map-get($overflow, $o);
+    }
 
-  &-oy-h {
-    overflow-y: hidden;
-  }
-
-  &-ox-a {
-    overflow-x: auto;
-  }
-
-  &-ox-h {
-    overflow-x: hidden;
-  }
-
-
-  &-o-a {
-    overflow: auto;
-  }
-
-  &-o-h {
-    overflow: hidden;
+    &-o-#{$o} {
+      overflow: map-get($overflow, $o);
+    }
   }
 }

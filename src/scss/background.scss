@@ -1,19 +1,30 @@
 @use 'config.scss' as *;
 
+$background: (
+  'w': #fff,
+  'b': #000,
+  't': transparent,
+  '100per': 100%,
+  '100vw': 100vw,
+);
+
+$repeat: (
+  'r': repeat,
+  'rx': repeat-x,
+  'ry': repeat-y,
+  'nr': no-repeat
+);
+
 .#{$namespace} {
-  &-bc-w {
-    background-color: #fff;
+  @each $b in map-keys($background) {
+    &-bc-#{$b} {
+      background-color: map-get($background, $b);
+    }
   }
 
-  &-bc-b {
-    background-color: #000;
-  }
-
-  &-bc-t {
-    background-color: transparent;
-  }
-
-  &-br-nr {
-    background-repeat: no-repeat;
+  @each $r in map-keys($repeat) {
+    &-br-#{$r} {
+      background-repeat: map-get($repeat, $r);
+    }
   }
 }

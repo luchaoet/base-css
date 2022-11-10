@@ -1,7 +1,7 @@
 @use 'config.scss' as *;
 
 
-@for $i from 0 through 36 {
+@for $i from 0 through 40 {
 	@if $i % 2==0 {
 		.#{$namespace} {
 			&-p-#{$i} {

@@ -1,6 +1,6 @@
 @use 'config.scss' as *;
 
-@for $i from 0 through 18 {
+@for $i from 0 through 40 {
 	@if $i % 2==0 {
 		.#{$namespace} {
 			&-br-#{$i} {

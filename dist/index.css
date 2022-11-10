@@ -111,6 +111,12 @@ img {
 .g-d-ig {
   display: inline-grid;
 }
+.g-grg-2 {
+  grid-row-gap: 2px;
+}
+.g-gcg-2 {
+  grid-column-gap: 2px;
+}
 .g-grg-4 {
   grid-row-gap: 4px;
 }
@@ -213,6 +219,18 @@ img {
 .g-gcg-36 {
   grid-column-gap: 36px;
 }
+.g-grg-38 {
+  grid-row-gap: 38px;
+}
+.g-gcg-38 {
+  grid-column-gap: 38px;
+}
+.g-grg-40 {
+  grid-row-gap: 40px;
+}
+.g-gcg-40 {
+  grid-column-gap: 40px;
+}
 
 .g-flex, .g-d-f, .g-jc-ai-c, .g-jc-fe-ai-c, .g-jc-sb-ai-c, .g-fd-c, .g-ai-c, .g-jc-fe, .g-jc-sa, .g-jc-sb, .g-jc-c {
   display: flex;
@@ -296,6 +314,9 @@ img {
 .g-f-l {
   float: left;
 }
+.g-f-n {
+  float: none;
+}
 
 .g-mw-1200 {
   max-width: 1200px;
@@ -323,12 +344,6 @@ img {
   color: #000;
 }
 
-.g-mh-100per {
-  min-height: 100%;
-}
-.g-mh-100vh {
-  min-height: 100vh;
-}
 .g-h-a {
   height: auto;
 }
@@ -340,6 +355,12 @@ img {
 }
 .g-h-100vh {
   height: 100vh;
+}
+.g-mh-100per {
+  min-height: 100%;
+}
+.g-mh-100vh {
+  min-height: 100vh;
 }
 
 .g-c-p {
@@ -795,6 +816,52 @@ img {
   margin-left: 36px;
   margin-right: 36px;
 }
+.g-m-38 {
+  margin: 38px;
+}
+.g-m-t-38 {
+  margin-top: 38px;
+}
+.g-m-r-38 {
+  margin-right: 38px;
+}
+.g-m-b-38 {
+  margin-bottom: 38px;
+}
+.g-m-l-38 {
+  margin-left: 38px;
+}
+.g-m-tb-38 {
+  margin-top: 38px;
+  margin-bottom: 38px;
+}
+.g-m-lr-38 {
+  margin-left: 38px;
+  margin-right: 38px;
+}
+.g-m-40 {
+  margin: 40px;
+}
+.g-m-t-40 {
+  margin-top: 40px;
+}
+.g-m-r-40 {
+  margin-right: 40px;
+}
+.g-m-b-40 {
+  margin-bottom: 40px;
+}
+.g-m-l-40 {
+  margin-left: 40px;
+}
+.g-m-tb-40 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.g-m-lr-40 {
+  margin-left: 40px;
+  margin-right: 40px;
+}
 .g-m-lr-a {
   margin-left: auto;
   margin-right: auto;
@@ -838,6 +905,50 @@ img {
 
 .g-br-18 {
   border-radius: 18px;
+}
+
+.g-br-20 {
+  border-radius: 20px;
+}
+
+.g-br-22 {
+  border-radius: 22px;
+}
+
+.g-br-24 {
+  border-radius: 24px;
+}
+
+.g-br-26 {
+  border-radius: 26px;
+}
+
+.g-br-28 {
+  border-radius: 28px;
+}
+
+.g-br-30 {
+  border-radius: 30px;
+}
+
+.g-br-32 {
+  border-radius: 32px;
+}
+
+.g-br-34 {
+  border-radius: 34px;
+}
+
+.g-br-36 {
+  border-radius: 36px;
+}
+
+.g-br-38 {
+  border-radius: 38px;
+}
+
+.g-br-40 {
+  border-radius: 40px;
 }
 
 .g-bw-0 {
@@ -1496,20 +1607,68 @@ img {
   padding-right: 36px;
 }
 
+.g-p-38 {
+  padding: 38px;
+}
+.g-p-t-38 {
+  padding-top: 38px;
+}
+.g-p-r-38 {
+  padding-right: 38px;
+}
+.g-p-b-38 {
+  padding-bottom: 38px;
+}
+.g-p-l-38 {
+  padding-left: 38px;
+}
+.g-p-tb-38 {
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+.g-p-lr-38 {
+  padding-left: 38px;
+  padding-right: 38px;
+}
+
+.g-p-40 {
+  padding: 40px;
+}
+.g-p-t-40 {
+  padding-top: 40px;
+}
+.g-p-r-40 {
+  padding-right: 40px;
+}
+.g-p-b-40 {
+  padding-bottom: 40px;
+}
+.g-p-l-40 {
+  padding-left: 40px;
+}
+.g-p-tb-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.g-p-lr-40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.g-ox-a {
+  overflow-x: auto;
+}
 .g-oy-a {
   overflow-y: auto;
 }
-.g-oy-h {
-  overflow-y: hidden;
-}
-.g-ox-a {
-  overflow-x: auto;
+.g-o-a {
+  overflow: auto;
 }
 .g-ox-h {
   overflow-x: hidden;
 }
-.g-o-a {
-  overflow: auto;
+.g-oy-h {
+  overflow-y: hidden;
 }
 .g-o-h {
   overflow: hidden;
@@ -1608,6 +1767,14 @@ img {
   font-size: 36px;
 }
 
+.g-fs-38 {
+  font-size: 38px;
+}
+
+.g-fs-40 {
+  font-size: 40px;
+}
+
 .g-t-i {
   transition-property: all;
   transition-duration: 0.2s;
@@ -1659,6 +1826,21 @@ img {
 .g-bc-t {
   background-color: transparent;
 }
+.g-bc-100per {
+  background-color: 100%;
+}
+.g-bc-100vw {
+  background-color: 100vw;
+}
+.g-br-r {
+  background-repeat: repeat;
+}
+.g-br-rx {
+  background-repeat: repeat-x;
+}
+.g-br-ry {
+  background-repeat: repeat-y;
+}
 .g-br-nr {
   background-repeat: no-repeat;
 }
@@ -1691,6 +1873,48 @@ img {
 
 .g-lh-1 {
   line-height: 1;
+}
+.g-lh-14 {
+  line-height: 14px;
+}
+.g-lh-16 {
+  line-height: 16px;
+}
+.g-lh-18 {
+  line-height: 18px;
+}
+.g-lh-20 {
+  line-height: 20px;
+}
+.g-lh-22 {
+  line-height: 22px;
+}
+.g-lh-24 {
+  line-height: 24px;
+}
+.g-lh-26 {
+  line-height: 26px;
+}
+.g-lh-28 {
+  line-height: 28px;
+}
+.g-lh-30 {
+  line-height: 30px;
+}
+.g-lh-32 {
+  line-height: 32px;
+}
+.g-lh-34 {
+  line-height: 34px;
+}
+.g-lh-36 {
+  line-height: 36px;
+}
+.g-lh-38 {
+  line-height: 38px;
+}
+.g-lh-40 {
+  line-height: 40px;
 }
 
 .g-td-n {
