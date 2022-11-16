@@ -1,8 +1,6 @@
 @use 'config.scss' as *;
 
 .#{$namespace} {
-
-  &-flex,
   &-d-f {
     display: flex;
   }
@@ -36,11 +34,18 @@
     align-items: center;
   }
 
+  &-ai-fs {
+    @extend .#{$namespace}-d-f;
+    align-items: flex-start;
+  }
+
   &-fd-r {
+    @extend .#{$namespace}-d-f;
     flex-direction: row;
   }
 
   &-fd-rr {
+    @extend .#{$namespace}-d-f;
     flex-direction: row-reverse;
   }
 
@@ -50,6 +55,7 @@
   }
 
   &-fd-cr {
+    @extend .#{$namespace}-d-f;
     flex-direction: column-reverse;
   }
 
@@ -109,5 +115,11 @@
 
   &-flex-0 {
     flex: 0 0 auto;
+  }
+
+  @for $o from 0 through 5 {
+    &-o-#{$o} {
+      order: $o
+    }
   }
 }

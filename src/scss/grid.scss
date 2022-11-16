@@ -1,13 +1,18 @@
 @use 'config.scss' as *;
 
 .#{$namespace} {
+  &-gtc-var {
+    grid-template-columns: var(--grid-template-columns);
+  }
 
   &-d-g {
     display: grid;
+    @extend .#{$namespace}-gtc-var;
   }
 
   &-d-ig {
     display: inline-grid;
+    @extend .#{$namespace}-gtc-var;
   }
 
   @for $i from 2 through 40 {

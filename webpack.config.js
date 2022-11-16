@@ -2,7 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');// 抽离css的插件
 
 module.exports = {
-  mode: 'development', // production
+  mode: 'development', // production development
   entry: './src/scss/index.scss',
   output: {
     path: path.resolve(__dirname, 'dist'),
