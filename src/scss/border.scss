@@ -15,6 +15,7 @@
 		.#{$namespace} {
 			&-bw-#{$i} {
 				border-width: 1px * $i;
+				border-color: var(--border-color);
 			}
 
 			@each $p in $position {
@@ -22,6 +23,7 @@
 
 				&-b#{$n}w-#{$i} {
 					border-#{$p}-width: 1px * $i;
+					border-color: var(--border-color);
 				}
 			}
 		}
@@ -55,6 +57,4 @@
 			border-#{$p}-style: dashed;
 		}
 	}
-
-
 }

@@ -1,6 +1,6 @@
 @use 'config.scss' as *;
 
-$weight: lighter, normal, bold;
+$weight: lighter, bold;
 
 .#{$namespace} {
 
@@ -10,5 +10,9 @@ $weight: lighter, normal, bold;
 		&-fw-#{$n} {
 			font-weight: $w;
 		}
+	}
+
+	&-fw-400 {
+		font-weight: 400;
 	}
 }
