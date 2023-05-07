@@ -1,6 +1,6 @@
 {
-  "name": "@luchao/base-sass",
-  "version": "3.0.5",
+  "name": "@luchao/base-css",
+  "version": "4.0.0",
   "description": "前端项目基础css样式",
   "main": "dist/index.css",
   "scripts": {
