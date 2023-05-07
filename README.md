@@ -1,4 +1,4 @@
-# @luchao/base-sass
+# @luchao/base-css
 前端项目基础css样式
 
 ### 版本及修改内容
@@ -8,7 +8,8 @@
 3.0.1  | :sunglasses: 新增 `visibility` `transition` `opacity` `position: static` `height: auto` `width: auto` |
 3.0.3 | :sunglasses: 新增 `line-height` 修改 `border-radius` `padding` `margin` 最大值为40px |
 3.0.4 | :sunglasses: 新增 `order 0-5` 支持 `grid-template-columns` |
-3.0.5 :cherry_blossom: | :sunglasses: 支持 `border-color` |
+3.0.5 | :sunglasses: 支持 `border-color` |
+4.0.0 :cherry_blossom: | :sunglasses: 插件名称修改为 `@luchao/base-css` |
 ### 依赖
 
 ```
