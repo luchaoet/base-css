@@ -10,13 +10,5 @@ export default defineConfig({
       name: 'dist',
       fileName: 'index',
     },
-    // rollupOptions: {
-    //   input: {
-    //     index: resolve(__dirname, 'scss/index.scss')
-    //   },
-    //   output: {
-    //     dir: 'dist'
-    //   }
-    // }
   }
 })
