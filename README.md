@@ -28,4 +28,4 @@
 
 
 ### 安装
-    npm install @luchao/base-sass --save
+    npm install @luchao/base-css --save
