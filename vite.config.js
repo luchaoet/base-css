@@ -9,6 +9,6 @@ export default defineConfig({
       entry: resolve(__dirname, 'scss/index.scss'),
       name: 'dist',
       fileName: 'index',
-    },
+    }
   }
 })

@@ -5,7 +5,8 @@ $cursor: (
   'na': not-allowed,
   'm': move,
   'zo': zoom-out,
-  'zi': zoom-in
+  'zi': zoom-in,
+  'd': default
 );
 
 .#{$namespace} {
