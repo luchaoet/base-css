@@ -13,6 +13,10 @@ $width: (
     max-width: 1200px;
   }
 
+  &-mw-0 {
+    min-width: 0;
+  }
+
   @each $w in map-keys($width) {
     &-w-#{$w} {
       width: map-get($width, $w);

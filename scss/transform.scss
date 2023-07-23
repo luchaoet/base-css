@@ -1,6 +1,6 @@
 @use 'config.scss' as *;
 
-$deg: 0, 90, 180;
+$deg: 0, 90, 180, 270, 360;
 
 .#{$namespace} {
   @each $d in $deg {
