@@ -18,6 +18,10 @@ $height: (
     min-height: 100%;
   }
 
+  &-mh-0 {
+    min-height: 0;
+  }
+
   &-mh-100vh {
     min-height: 100vh;
   }
