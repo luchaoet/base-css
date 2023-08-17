@@ -10,9 +10,9 @@
     min-width: 0;
   }
 
-  @each $w in map.keys($width) {
-    &-w-#{$w} {
-      width: map.get($width, $w);
+  @each $k in map.keys($width) {
+    &-w-#{$k} {
+      width: map.get($width, $k);
     }
   }
 }

@@ -2,9 +2,9 @@
 @use 'sass:map';
 
 .#{$namespace} {
-  @each $c in map.keys($cursor) {
-    &-c-#{$c} {
-      cursor: map.get($cursor, $c);
+  @each $k in map.keys($cursor) {
+    &-c-#{$k} {
+      cursor: map.get($cursor, $k);
     }
   }
 }

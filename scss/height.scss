@@ -2,9 +2,9 @@
 @use 'sass:map';
 
 .#{$namespace} {
-  @each $h in map.keys($height) {
-    &-h-#{$h} {
-      height: map.get($height, $h);
+  @each $k in map.keys($height) {
+    &-h-#{$k} {
+      height: map.get($height, $k);
     }
   }
 

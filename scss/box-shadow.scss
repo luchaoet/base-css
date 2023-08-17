@@ -3,10 +3,10 @@
 
 .#{$namespace} {
 
-  @each $b in map.keys($box-shadow) {
-    &-bs-#{$b} {
+  @each $k in map.keys($box-shadow) {
+    &-bs-#{$k} {
       // unquote 删除引号
-      box-shadow: unquote(map.get($box-shadow, $b));
+      box-shadow: unquote(map.get($box-shadow, $k));
     }
   }
 }

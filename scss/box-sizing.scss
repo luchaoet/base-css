@@ -2,9 +2,9 @@
 @use 'sass:map';
 
 .#{$namespace} {
-  @each $b in map.keys($box-sizing) {
-    &-bs-#{$b} {
-      box-sizing: map.get($box-sizing, $b);
+  @each $k in map.keys($box-sizing) {
+    &-bs-#{$k} {
+      box-sizing: map.get($box-sizing, $k);
     }
   }
 }

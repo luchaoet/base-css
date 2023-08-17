@@ -2,9 +2,9 @@
 @use 'sass:map';
 
 .#{$namespace} {
-  @each $d in map.keys($display) {
-    &-d-#{$d} {
-      display: map.get($display, $d);
+  @each $k in map.keys($display) {
+    &-d-#{$k} {
+      display: map.get($display, $k);
     }
   }
 }
