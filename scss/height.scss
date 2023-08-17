@@ -1,12 +1,5 @@
 @use 'config.scss' as *;
 
-$height: (
-  'a': auto,
-  '0': 0,
-  '100per': 100%,
-  '100vh': 100vh,
-);
-
 .#{$namespace} {
   @each $h in map-keys($height) {
     &-h-#{$h} {

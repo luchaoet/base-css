@@ -1,7 +1,5 @@
 @use 'config.scss' as *;
 
-$align: left, center, right;
-
 .#{$namespace} {
   @each $a in $align {
     $n: str-slice($a, 1, 1);

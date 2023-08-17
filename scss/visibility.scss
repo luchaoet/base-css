@@ -1,9 +1,7 @@
 @use 'config.scss' as *;
 
-$attributes: visible, hidden;
-
 .#{$namespace} {
-  @each $a in $attributes {
+  @each $a in $visibility {
     $n: str-slice($a, 1, 1);
 
     &-v-#{$n} {

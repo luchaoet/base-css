@@ -1,9 +1,7 @@
 @use 'config.scss' as *;
 
-$attributes: static, relative, absolute, fixed, sticky;
-
 .#{$namespace} {
-  @each $a in $attributes {
+  @each $a in $position {
     $n: str-slice($a, 1, 1);
 
     &-p-#{$n} {
@@ -11,7 +9,7 @@ $attributes: static, relative, absolute, fixed, sticky;
     }
   }
 
-  @each $p in $position {
+  @each $p in $direction {
     $n: str-slice($p, 1, 1);
 
     &-#{$n}-0 {

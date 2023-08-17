@@ -1,7 +1,5 @@
 @use 'config.scss' as *;
 
-$zIndex: -1, 1, 2, 9, 10, 99, 100, 999, 1000, 9999, 10000;
-
 .#{$namespace} {
   @each $z in $zIndex {
 

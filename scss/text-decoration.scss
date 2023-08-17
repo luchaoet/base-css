@@ -1,7 +1,5 @@
 @use 'config.scss' as *;
 
-$decoration: none, underline;
-
 .#{$namespace} {
   @each $d in $decoration {
     $n: str-slice($d, 1, 1);

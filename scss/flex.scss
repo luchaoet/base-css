@@ -1,14 +1,6 @@
 @use 'config.scss' as *;
 
 .#{$namespace} {
-  &-d-f {
-    display: flex;
-  }
-
-  &-d-if {
-    display: inline-flex;
-  }
-
   &-jc-c {
     @extend .#{$namespace}-d-f;
     justify-content: center;

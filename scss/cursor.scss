@@ -1,14 +1,5 @@
 @use 'config.scss' as *;
 
-$cursor: (
-  'p': pointer,
-  'na': not-allowed,
-  'm': move,
-  'zo': zoom-out,
-  'zi': zoom-in,
-  'd': default
-);
-
 .#{$namespace} {
   @each $c in map-keys($cursor) {
     &-c-#{$c} {

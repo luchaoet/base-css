@@ -1,11 +1,9 @@
 @use 'config.scss' as *;
 
 .#{$namespace} {
-  &-c-w {
-    color: #fff;
-  }
-
-  &-c-b {
-    color: #000;
+  @each $c in map-keys($color) {
+    &-c-#{$c} {
+      color: map-get($color, $c);
+    }
   }
 }

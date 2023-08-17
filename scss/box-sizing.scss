@@ -1,14 +1,14 @@
 @use 'config.scss' as *;
 
-$box: (
+$boxSizing: (
   'bb': border-box,
   'cb': content-box
 );
 
 .#{$namespace} {
-  @each $b in map-keys($box) {
+  @each $b in map-keys($boxSizing) {
     &-bs-#{$b} {
-      box-sizing: map-get($box, $b);
+      box-sizing: map-get($boxSizing, $b);
     }
   }
 }

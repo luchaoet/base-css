@@ -1,7 +1,5 @@
 @use 'config.scss' as *;
 
-$float: right, left, none;
-
 .#{$namespace} {
 
   @each $f in $float {

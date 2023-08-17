@@ -1,18 +1,5 @@
 @use 'config.scss' as *;
 
-$background: (
-  'w': #fff,
-  'b': #000,
-  't': transparent,
-);
-
-$repeat: (
-  'r': repeat,
-  'rx': repeat-x,
-  'ry': repeat-y,
-  'nr': no-repeat
-);
-
 .#{$namespace} {
   @each $b in map-keys($background) {
     &-bc-#{$b} {

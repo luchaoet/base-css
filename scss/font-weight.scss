@@ -1,7 +1,5 @@
 @use 'config.scss' as *;
 
-$weight: lighter, bold;
-
 .#{$namespace} {
 
 	@each $w in $weight {

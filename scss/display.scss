@@ -1,12 +1,5 @@
 @use 'config.scss' as *;
 
-$display: (
-  'i': inline,
-  'b': block,
-  'ib': inline-block,
-  'n': none
-);
-
 .#{$namespace} {
   @each $d in map-keys($display) {
     &-d-#{$d} {

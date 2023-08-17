@@ -1,2 +1,69 @@
 $namespace: 'g' !default;
-$position: top, right, bottom, left;
+$direction: top, right, bottom, left;
+$position: relative, absolute, fixed, sticky;
+$display: (
+  i: inline,
+  b: block,
+  ib: inline-block,
+  n: none,
+  f: flex,
+  if: inline-flex,
+);
+$color: (
+  w: #fff,
+  b: #000,
+);
+$background: (
+  w: #fff,
+  b: #000,
+  t: transparent,
+);
+$boxShadow: (
+  basic: '0px 12px 32px 4px rgba(0, 0, 0, .04), 0px 8px 20px rgba(0, 0, 0, .08)',
+  light: '0px 0px 12px rgba(0, 0, 0, .12)',
+  lighter: '0px 0px 6px rgba(0, 0, 0, .12)',
+  dark: '0px 16px 48px 16px rgba(0, 0, 0, .08), 0px 12px 32px rgba(0, 0, 0, .12), 0px 8px 16px -8px rgba(0, 0, 0, .16)',
+  n: 'none',
+);
+$repeat: (
+  r: repeat,
+  rx: repeat-x,
+  ry: repeat-y,
+  nr: no-repeat,
+);
+$cursor: (
+  p: pointer,
+  na: not-allowed,
+  m: move,
+  zo: zoom-out,
+  zi: zoom-in,
+  d: default,
+);
+$float: right, left, none;
+$weight: lighter, bold;
+$opacity: 0, 1;
+$overflow: auto, hidden;
+$align: left, center, right;
+$decoration: none, underline;
+$deg: 0, 90, 180, 270, 360;
+$visibility: visible, hidden;
+$width: (
+  auto: auto,
+  0: 0,
+  50per: 50%,
+  100per: 100%,
+  100vw: 100vw,
+);
+$height: (
+  a: auto,
+  0: 0,
+  100per: 100%,
+  100vh: 100vh,
+);
+$zIndex: -1, 1, 2, 9, 10, 99, 100, 999, 1000, 9999, 10000;
+$timingFunction: (
+  e: ease,
+  ei: ease-in,
+  eo: ease-out,
+  eio: ease-in-out,
+);

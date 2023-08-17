@@ -1,13 +1,5 @@
 @use 'config.scss' as *;
 
-$width: (
-  'auto': auto,
-  '0': 0,
-  '50per': 50%,
-  '100per': 100%,
-  '100vw': 100vw,
-);
-
 .#{$namespace} {
   &-mw-1200 {
     max-width: 1200px;
