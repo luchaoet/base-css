@@ -1,9 +1,10 @@
 @use 'config.scss' as *;
+@use 'sass:map';
 
 .#{$namespace} {
-  @each $c in map-keys($cursor) {
+  @each $c in map.keys($cursor) {
     &-c-#{$c} {
-      cursor: map-get($cursor, $c);
+      cursor: map.get($cursor, $c);
     }
   }
 }

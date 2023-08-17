@@ -1,9 +1,10 @@
 @use 'config.scss' as *;
+@use 'sass:string';
 
 .#{$namespace} {
 
   @each $o in $overflow {
-    $n: str-slice($o, 1, 1);
+    $n: string.slice($o, 1, 1);
 
     &-ox-#{$n} {
       overflow-x: $o;

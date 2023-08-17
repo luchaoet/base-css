@@ -1,4 +1,5 @@
 @use 'config.scss' as *;
+@use 'sass:map';
 
 .#{$namespace} {
   &-mw-1200 {
@@ -9,9 +10,9 @@
     min-width: 0;
   }
 
-  @each $w in map-keys($width) {
+  @each $w in map.keys($width) {
     &-w-#{$w} {
-      width: map-get($width, $w);
+      width: map.get($width, $w);
     }
   }
 }

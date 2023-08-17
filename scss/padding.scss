@@ -1,5 +1,5 @@
 @use 'config.scss' as *;
-
+@use 'sass:string';
 
 @for $i from 0 through 40 {
 	@if $i % 2==0 {
@@ -9,7 +9,7 @@
 			}
 
 			@each $p in $direction {
-				$n: str-slice($p, 1, 1);
+				$n: string.slice($p, 1, 1);
 
 				&-p-#{$n}-#{$i} {
 					padding-#{$p}: 1px * $i;

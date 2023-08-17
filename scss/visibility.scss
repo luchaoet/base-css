@@ -1,8 +1,9 @@
 @use 'config.scss' as *;
+@use 'sass:string';
 
 .#{$namespace} {
   @each $a in $visibility {
-    $n: str-slice($a, 1, 1);
+    $n: string.slice($a, 1, 1);
 
     &-v-#{$n} {
       visibility: $a;

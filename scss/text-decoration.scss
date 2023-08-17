@@ -1,8 +1,9 @@
 @use 'config.scss' as *;
+@use 'sass:string';
 
 .#{$namespace} {
-  @each $d in $decoration {
-    $n: str-slice($d, 1, 1);
+  @each $d in $text-decoration {
+    $n: string.slice($d, 1, 1);
 
     &-td-#{$n} {
       text-decoration: $d;

@@ -1,9 +1,10 @@
 @use 'config.scss' as *;
+@use 'sass:map';
 
 .#{$namespace} {
-  @each $h in map-keys($height) {
+  @each $h in map.keys($height) {
     &-h-#{$h} {
-      height: map-get($height, $h);
+      height: map.get($height, $h);
     }
   }
 

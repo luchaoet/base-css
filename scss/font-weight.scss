@@ -1,9 +1,10 @@
 @use 'config.scss' as *;
+@use 'sass:string';
 
 .#{$namespace} {
 
-	@each $w in $weight {
-		$n: str-slice($w, 1, 1);
+	@each $w in $font-weight {
+		$n: string.slice($w, 1, 1);
 
 		&-fw-#{$n} {
 			font-weight: $w;

@@ -1,4 +1,5 @@
 @use 'config.scss' as *;
+@use 'sass:string';
 
 .#{$namespace} {
 	@for $i from 0 through 40 {
@@ -8,7 +9,7 @@
 			}
 
 			@each $p in $direction {
-				$n: str-slice($p, 1, 1);
+				$n: string.slice($p, 1, 1);
 
 				&-m-#{$n}-#{$i} {
 					margin-#{$p}: 1px * $i;

@@ -1,8 +1,9 @@
 @use 'config.scss' as *;
+@use 'sass:string';
 
 .#{$namespace} {
-  @each $a in $align {
-    $n: str-slice($a, 1, 1);
+  @each $a in $text-align {
+    $n: string.slice($a, 1, 1);
 
     &-ta-#{$n} {
       text-align: $a;

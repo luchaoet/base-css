@@ -1,9 +1,10 @@
 @use 'config.scss' as *;
+@use 'sass:string';
 
 .#{$namespace} {
 
   @each $f in $float {
-    $n: str-slice($f, 1, 1);
+    $n: string.slice($f, 1, 1);
 
     &-f-#{$n} {
       float: $f;

@@ -1,9 +1,10 @@
 @use 'config.scss' as *;
+@use 'sass:map';
 
 .#{$namespace} {
-  @each $c in map-keys($color) {
-    &-c-#{$c} {
-      color: map-get($color, $c);
+  @each $k in map.keys($color) {
+    &-c-#{$k} {
+      color: map.get($color, $k);
     }
   }
 }

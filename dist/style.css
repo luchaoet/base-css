@@ -443,12 +443,16 @@ img {
   user-select: none;
 }
 
-.g-h-a {
-  height: auto;
+.g-ww-bw {
+  word-wrap: break-word;
 }
 
 .g-h-0 {
   height: 0;
+}
+
+.g-h-a {
+  height: auto;
 }
 
 .g-h-100per {

@@ -1,4 +1,5 @@
 @use 'config.scss' as *;
+@use 'sass:string';
 
 @for $i from 0 through 40 {
 	@if $i % 2==0 {
@@ -19,7 +20,7 @@
 			}
 
 			@each $p in $direction {
-				$n: str-slice($p, 1, 1);
+				$n: string.slice($p, 1, 1);
 
 				&-b#{$n}w-#{$i} {
 					border-#{$p}-width: 1px * $i;
@@ -45,14 +46,12 @@
 	}
 
 	@each $p in $direction {
-		$n: str-slice($p, 1, 1);
+		$n: string.slice($p, 1, 1);
 
-		// g-bts-s
 		&-b#{$n}s-s {
 			border-#{$p}-style: solid;
 		}
 
-		// g-bts-d
 		&-b#{$n}s-d {
 			border-#{$p}-style: dashed;
 		}
