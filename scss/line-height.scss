@@ -1,16 +1,14 @@
 @use 'config.scss' as *;
 
 .#{$namespace} {
-  &-lh-1 {
-    line-height: 1;
-  }
-
-  @for $i from 14 through 40 {
-    @if $i % 2==0 {
-      &-lh-#{$i} {
-        line-height: 1px * $i;
-      }
-
+  @each $i in $line-height {
+    @if $i==1 {
+      line-height: 1;
     }
+
+    @else {
+      line-height: 1px * $i;
+    }
+
   }
 }

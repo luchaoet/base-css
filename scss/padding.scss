@@ -1,32 +1,28 @@
 @use 'config.scss' as *;
 @use 'sass:string';
 
-@for $i from 0 through 40 {
-	@if $i % 2==0 {
-		.#{$namespace} {
-			&-p-#{$i} {
-				padding: 1px * $i;
-			}
-
-			@each $p in $direction {
-				$n: string.slice($p, 1, 1);
-
-				&-p-#{$n}-#{$i} {
-					padding-#{$p}: 1px * $i;
-				}
-			}
-
-			&-p-tb-#{$i} {
-				padding-top: 1px * $i;
-				padding-bottom: 1px * $i;
-			}
-
-			&-p-lr-#{$i} {
-				padding-left: 1px * $i;
-				padding-right: 1px * $i;
-			}
-
+.#{$namespace} {
+	@each $i in $padding {
+		&-p-#{$i} {
+			padding: 1px * $i;
 		}
 
+		&-p-tb-#{$i} {
+			padding-top: 1px * $i;
+			padding-bottom: 1px * $i;
+		}
+
+		&-p-lr-#{$i} {
+			padding-left: 1px * $i;
+			padding-right: 1px * $i;
+		}
+
+		@each $p in $direction {
+			$n: string.slice($p, 1, 1);
+
+			&-p-#{$n}-#{$i} {
+				padding-#{$p}: 1px * $i;
+			}
+		}
 	}
 }

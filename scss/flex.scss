@@ -109,9 +109,9 @@
     flex: 0 0 auto;
   }
 
-  @for $o from 0 through 5 {
-    &-o-#{$o} {
-      order: $o
+  @each $i in $order {
+    &-o-#{$i} {
+      order: $i;
     }
   }
 }

@@ -15,17 +15,13 @@
     @extend .#{$namespace}-gtc-var;
   }
 
-  @for $i from 2 through 40 {
-    @if $i % 2==0 {
-      &-grg-#{$i} {
-        grid-row-gap: 1px * $i;
-      }
+  @each $i in $grid-gap {
+    &-grg-#{$i} {
+      grid-row-gap: 1px * $i;
+    }
 
-      &-gcg-#{$i} {
-        grid-column-gap: 1px * $i;
-      }
-
+    &-gcg-#{$i} {
+      grid-column-gap: 1px * $i;
     }
   }
-
 }

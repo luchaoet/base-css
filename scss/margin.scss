@@ -2,28 +2,26 @@
 @use 'sass:string';
 
 .#{$namespace} {
-	@for $i from 0 through 40 {
-		@if $i % 2==0 {
-			&-m-#{$i} {
-				margin: 1px * $i;
-			}
+	@each $i in $margin {
+		&-m-#{$i} {
+			margin: 1px * $i;
+		}
 
-			@each $p in $direction {
-				$n: string.slice($p, 1, 1);
+		&-m-tb-#{$i} {
+			margin-top: 1px * $i;
+			margin-bottom: 1px * $i;
+		}
 
-				&-m-#{$n}-#{$i} {
-					margin-#{$p}: 1px * $i;
-				}
-			}
+		&-m-lr-#{$i} {
+			margin-left: 1px * $i;
+			margin-right: 1px * $i;
+		}
 
-			&-m-tb-#{$i} {
-				margin-top: 1px * $i;
-				margin-bottom: 1px * $i;
-			}
+		@each $p in $direction {
+			$n: string.slice($p, 1, 1);
 
-			&-m-lr-#{$i} {
-				margin-left: 1px * $i;
-				margin-right: 1px * $i;
+			&-m-#{$n}-#{$i} {
+				margin-#{$p}: 1px * $i;
 			}
 		}
 	}

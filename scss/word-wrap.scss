@@ -1,0 +1,7 @@
+@use 'config.scss' as *;
+
+.#{$namespace} {
+  &-ww-bw {
+    word-wrap: break-word;
+  }
+}

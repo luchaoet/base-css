@@ -1,17 +1,10 @@
 @use 'config.scss' as *;
-@use 'sass:string';
+@use 'sass:map';
 
 .#{$namespace} {
-
-	@each $w in $font-weight {
-		$n: string.slice($w, 1, 1);
-
-		&-fw-#{$n} {
-			font-weight: $w;
+	@each $k in map.keys($font-weight) {
+		&-fw-#{$k} {
+			font-weight: map.get($font-weight, $k);
 		}
-	}
-
-	&-fw-400 {
-		font-weight: 400;
 	}
 }

@@ -8,15 +8,9 @@
     }
   }
 
-  &-mh-100per {
-    min-height: 100%;
-  }
-
-  &-mh-0 {
-    min-height: 0;
-  }
-
-  &-mh-100vh {
-    min-height: 100vh;
+  @each $k in map.keys($min-height) {
+    &-mh-#{$k} {
+      min-height: map.get($min-height, $k);
+    }
   }
 }

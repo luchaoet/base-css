@@ -4,7 +4,6 @@
 @import './float.scss';
 @import './width.scss';
 @import './color.scss';
-@import './other.scss';
 @import './height.scss';
 @import './cursor.scss';
 @import './margin.scss';
@@ -17,6 +16,7 @@
 @import './ellipsis.scss';
 @import './position.scss';
 @import './font-size.scss';
+@import './word-wrap.scss';
 @import './transform.scss';
 @import './transition.scss';
 @import './visibility.scss';
@@ -26,4 +26,6 @@
 @import './box-shadow.scss';
 @import './font-weight.scss';
 @import './line-height.scss';
+@import './user-select.scss';
+@import './pointer-events.scss';
 @import './text-decoration.scss';

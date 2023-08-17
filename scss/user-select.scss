@@ -1,0 +1,7 @@
+@use 'config.scss' as *;
+
+.#{$namespace} {
+  &-us-n {
+    user-select: none;
+  }
+}

@@ -1,0 +1,12 @@
+@use 'config.scss' as *;
+@use 'sass:string';
+
+.#{$namespace} {
+  @each $k in $pointer-events {
+    $n: string.slice($k, 1, 1);
+
+    &-pe-#{$n} {
+      pointer-events: $k;
+    }
+  }
+}

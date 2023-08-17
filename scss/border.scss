@@ -1,38 +1,29 @@
 @use 'config.scss' as *;
 @use 'sass:string';
 
-@for $i from 0 through 40 {
-	@if $i % 2==0 {
-		.#{$namespace} {
-			&-br-#{$i} {
-				border-radius: 1px * $i;
-			}
+.#{$namespace} {
+	@each $i in $border-radius {
+		&-br-#{$i} {
+			border-radius: 1px * $i;
 		}
 	}
-}
 
-@for $i from 0 through 10 {
-	@if $i % 2==0 or $i ==1 {
-		.#{$namespace} {
-			&-bw-#{$i} {
-				border-width: 1px * $i;
+	@each $i in $border-width {
+		&-bw-#{$i} {
+			border-width: 1px * $i;
+			border-color: var(--border-color);
+		}
+
+		@each $p in $direction {
+			$n: string.slice($p, 1, 1);
+
+			&-b#{$n}w-#{$i} {
+				border-#{$p}-width: 1px * $i;
 				border-color: var(--border-color);
 			}
-
-			@each $p in $direction {
-				$n: string.slice($p, 1, 1);
-
-				&-b#{$n}w-#{$i} {
-					border-#{$p}-width: 1px * $i;
-					border-color: var(--border-color);
-				}
-			}
 		}
-
 	}
-}
 
-.#{$namespace} {
 	&-b-n {
 		border: none;
 	}
@@ -56,4 +47,5 @@
 			border-#{$p}-style: dashed;
 		}
 	}
+
 }
