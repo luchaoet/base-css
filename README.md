@@ -4,8 +4,11 @@
 ### 安装
     npm install @luchao/base-css --save
 
-### 版本及修改内容
-版本  | 修改内容|
+### 使用
+    import "@luchao/base-css"
+
+### 版本及内容
+版本  | 内容 |
 --------- | --------|
 3.0.0  | :flushed: 删除 `font-size` `margin` `padding` `border-width` 奇数px，后期属性均不使用奇数px |
 3.0.1  | :sunglasses: 新增 `visibility` `transition` `opacity` `position: static` `height: auto` `width: auto` |
