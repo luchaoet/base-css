@@ -16,5 +16,6 @@
 4.0.1 | :sunglasses: 使用 `vite` 构建 |
 4.0.2 | :sunglasses: 新增 `transform: rotateZ` |
 4.0.3 | :sunglasses: 新增 `min-width: 0;` |
-4.0.4 :cherry_blossom: | :sunglasses: 新增 `word-wrap: break-word;` |
+4.0.4 | :sunglasses: 新增 `word-wrap: break-word;` |
+4.0.5 :cherry_blossom: | :sunglasses: 新增 `object-fit` |
 

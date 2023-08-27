@@ -2,13 +2,14 @@
 
 .#{$namespace} {
   @each $i in $line-height {
-    @if $i==1 {
-      line-height: 1;
-    }
+    &-lh-#{$i} {
+      @if $i==1 {
+        line-height: 1;
+      }
 
-    @else {
-      line-height: 1px * $i;
+      @else {
+        line-height: 1px * $i;
+      }
     }
-
   }
 }

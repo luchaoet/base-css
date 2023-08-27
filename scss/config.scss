@@ -71,6 +71,12 @@ $box-sizing: (
   'bb': border-box,
   'cb': content-box
 );
+$object-fit: (
+  f: fill,
+  contain: contain,
+  cover: cover,
+  sd: scale-down,
+);
 
 $overflow: auto, hidden;
 $float: right, left, none;
@@ -80,6 +86,7 @@ $text-align: left, center, right;
 $text-decoration: none, underline;
 $direction: top, right, bottom, left;
 $position: relative, absolute, fixed, sticky;
+
 
 $opacity: 0, 1;
 $order: 0, 1, 2, 3, 4, 5;
