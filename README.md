@@ -15,7 +15,6 @@
 3.0.3 | :sunglasses: 新增 `line-height` 修改 `border-radius` `padding` `margin` 最大值为40px |
 3.0.4 | :sunglasses: 新增 `order 0-5` 支持 `grid-template-columns` |
 3.0.5 | :sunglasses: 支持 `border-color` |
-    |   |
 4.0.0 | :flushed: 插件名称修改为 `@luchao/base-css` |
 4.0.1 | :sunglasses: 使用 `vite` 构建 |
 4.0.2 | :sunglasses: 新增 `transform: rotateZ` |
