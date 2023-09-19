@@ -21,5 +21,5 @@
 4.0.3 | :sunglasses: 新增 `min-width: 0;` |
 4.0.4 | :sunglasses: 新增 `word-wrap: break-word;` |
 4.0.5 | :sunglasses: 新增 `object-fit` |
-4.0.6 :cherry_blossom: | :flushed: 删除 `order: 0`，与 `opacity: 0` 命名重复 |
-
+4.0.6 | :flushed: 删除 `order: 0`，与 `opacity: 0` 命名重复 |
+4.0.7 :cherry_blossom: | :sunglasses: 新增 `max-width: 100%` |

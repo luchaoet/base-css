@@ -395,6 +395,10 @@ img {
   max-width: 1200px;
 }
 
+.g-mw-100per {
+  max-width: 100%;
+}
+
 .g-mw-0 {
   min-width: 0;
 }
