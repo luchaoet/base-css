@@ -1,6 +1,8 @@
 @use 'config.scss' as *;
 
 .#{$namespace} {
+
+  // justify-content
   &-jc-c {
     @extend .#{$namespace}-d-f;
     justify-content: center;
@@ -21,21 +23,46 @@
     justify-content: flex-end;
   }
 
-  &-ai-c {
+  &-jc-fs {
     @extend .#{$namespace}-d-f;
+    justify-content: flex-start;
+  }
+
+  &-jc-fe-ai-c {
+    @extend .#{$namespace}-d-f;
+    justify-content: flex-end;
     align-items: center;
   }
 
+  &-jc-sb-ai-c {
+    @extend .#{$namespace}-d-f;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-jc-ai-c {
+    @extend .#{$namespace}-d-f;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // align-items
   &-ai-fs {
     @extend .#{$namespace}-d-f;
     align-items: flex-start;
   }
 
-  &-fd-r {
+  &-ai-fe {
     @extend .#{$namespace}-d-f;
-    flex-direction: row;
+    align-items: flex-end;
   }
 
+  &-ai-c {
+    @extend .#{$namespace}-d-f;
+    align-items: center;
+  }
+
+  // flex-direction
   &-fd-rr {
     @extend .#{$namespace}-d-f;
     flex-direction: row-reverse;
@@ -51,36 +78,25 @@
     flex-direction: column-reverse;
   }
 
-  &-jc-sb-ai-c {
+  &-fd-r {
     @extend .#{$namespace}-d-f;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
   }
 
-  &-jc-fe-ai-c {
-    @extend .#{$namespace}-d-f;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  &-jc-ai-c {
-    @extend .#{$namespace}-d-f;
-    justify-content: center;
-    align-items: center;
-  }
-
+  // flex-wrap
   &-fw-w {
     flex-wrap: wrap;
-  }
-
-  &-fw-n {
-    flex-wrap: nowrap;
   }
 
   &-fw-wr {
     flex-wrap: wrap-reverse;
   }
 
+  &-fw-n {
+    flex-wrap: nowrap;
+  }
+
+  // flex-grow
   &-fg-1 {
     flex-grow: 1;
   }
@@ -89,6 +105,7 @@
     flex-grow: 0;
   }
 
+  // flex-shrink
   &-fs-1 {
     flex-shrink: 1;
   }
@@ -109,6 +126,7 @@
     flex: 0 0 auto;
   }
 
+  // order
   @each $i in $order {
     &-o-#{$i} {
       order: $i;

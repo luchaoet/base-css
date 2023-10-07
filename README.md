@@ -18,8 +18,11 @@
 4.0.0 | :flushed: 插件名称修改为 `@luchao/base-css` |
 4.0.1 | :sunglasses: 使用 `vite` 构建 |
 4.0.2 | :sunglasses: 新增 `transform: rotateZ` |
-4.0.3 | :sunglasses: 新增 `min-width: 0;` |
-4.0.4 | :sunglasses: 新增 `word-wrap: break-word;` |
+4.0.3 | :sunglasses: 新增 `min-width: 0` |
+4.0.4 | :sunglasses: 新增 `word-wrap: break-word` |
 4.0.5 | :sunglasses: 新增 `object-fit` |
 4.0.6 | :flushed: 删除 `order: 0`，与 `opacity: 0` 命名重复 |
-4.0.7 :cherry_blossom: | :sunglasses: 新增 `max-width: 100%` |
+4.0.7 | :sunglasses: 新增 `max-width: 100%` |
+4.0.8 :cherry_blossom: | :sunglasses: 新增 `align-items: flex-end` |
+
+
