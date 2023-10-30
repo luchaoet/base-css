@@ -1,6 +1,6 @@
 {
   "name": "@luchao/base-css",
-  "version": "4.0.8",
+  "version": "5.0.0",
   "description": "前端项目基础css样式",
   "main": "dist/style.css",
   "author": "luchaoet",

@@ -1,11 +1,10 @@
 @use 'config.scss' as *;
+@use 'sass:map';
 
 .#{$namespace} {
-
-  @each $v in $opacity {
-    &-o-#{$v} {
-      opacity: $v;
+  @each $k in map.keys($opacity) {
+    &-o-#{$k} {
+      opacity: map.get($opacity, $k);
     }
   }
-
 }
