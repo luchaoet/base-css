@@ -5,7 +5,7 @@
     npm install @luchao/base-css --save
 
 ### 使用
-全局引入
+    // 全局引入
     import "@luchao/base-css"
 
 ### 版本及内容
