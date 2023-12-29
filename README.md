@@ -1,10 +1,11 @@
 # @luchao/base-css
-前端项目基础css样式
+前端项目基础 css
 
 ### 安装
     npm install @luchao/base-css --save
 
 ### 使用
+全局引入
     import "@luchao/base-css"
 
 ### 版本及内容
